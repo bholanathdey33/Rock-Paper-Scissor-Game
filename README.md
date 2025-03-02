@@ -1,1 +1,1 @@
-﻿# Rock Paper Scissors Game using HTML CSS JAVASCRIPT
+﻿# Rock Paper Scissors Game
