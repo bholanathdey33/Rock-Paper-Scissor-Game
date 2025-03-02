@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(120deg, #ff9a9e, #fad0c4);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    padding: 15px;
+    color: white;
+    height: 5rem;
+    text-transform: uppercase;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    line-height: 5rem;
+    border-radius: 10px;
+    margin-bottom: 5rem;
+}
+
+.choice {
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    background: linear-gradient(45deg, #1a5e96, #173961);
+}
+
+.choice img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8);
+}
+
+.choice:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8);
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    gap: 5rem;
+}
+
+#user-score, #comp-score {
+    font-size: 4rem;
+}
+
+.msg-container {
+    margin-top: 4rem;
+}
+
+#msg {
+    margin-top: 5rem;
+    background-color: #032853;
+    color: #fff;
+    height: 5rem;
+    font-size: 2rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: 2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.computer-choice {
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: #17263a;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+#comp-choice-display {
+    margin-top: 1rem;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color:#391266;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.reset-container {
+    margin-top: 2rem;
+}
+
+#reset-btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #a02e5e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+#reset-btn:active {
+    transform: scale(0.95);
+    background-color: #ff477e;
+}
+.msg-container {
+    margin-top: 4rem;
+    transition: all 0.3s ease-in-out; 
+}
